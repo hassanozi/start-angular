@@ -1,0 +1,17 @@
+.act {
+    color: green;
+  }
+
+  .fontcolor {
+    color: white;
+  }
+
+  ul{
+    text-align: end;
+  }
+
+  ul {
+    text-align: justify; /* For Edge */
+    text-align-last: justify;
+  }
+  

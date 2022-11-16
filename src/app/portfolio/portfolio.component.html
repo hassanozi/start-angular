@@ -1,0 +1,72 @@
+<div class="d-flex align-items-center flex-column" style="background-color: rgb(249, 251, 251) ; width: 100%; height: 100%;">
+    <h1>PORTFOLIO</h1>
+    <br>
+        <div class="column">
+          <img src="../../assets/collection-2.jpg">
+        </div>
+    <br>
+    <div class="container">
+        <div class="row justify-content-center" >
+            <div class="align-items-center col-md-3">
+                <img (click)="imageSource(1);titleText(1)" src="../../assets/portfolio1.jpg" style="width:100%"  data-bs-toggle="modal" data-bs-target="#exampleModal1">
+            </div>
+            <div class="align-items-center col-md-3">
+                <img (click)="imageSource(2);titleText(2)" src="../../assets/portfolio2.jpg" style="width:100%" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+            </div>
+            <div class="align-items-center col-md-3">
+                <img (click)="imageSource(3);titleText(3)" src="../../assets/portfolio3.jpg" style="width:100%" data-bs-toggle="modal" data-bs-target="#exampleModal1"> 
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <img (click)="imageSource(4);titleText(4)" src="../../assets/portfolio4.jpg" style="width:100%" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+            </div>
+            <div class="col-md-3">
+                <img (click)="imageSource(5);titleText(5)" src="../../assets/portfolio5.jpg" style="width:100%" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+            </div>
+            <div class="col-md-3">
+                <img (click)="imageSource(6);titleText(6)" src="../../assets/portfolio6.jpg" style="width:100%" data-bs-toggle="modal" data-bs-target="#exampleModal1"> 
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+
+          <div class="d-flex align-items-center flex-column" style="background-color: rgb(249, 251, 251) ; width: 100%; height: 100%;">
+            <h1>{{textT}}</h1>
+            <br>
+                <div class="column">
+                  <img src="../../assets/collection-2.jpg"  style="width:100%">
+                </div>
+            <br>
+            <div class="container">
+                <div class="row justify-content-center" >
+                    <div class="align-items-center col-md-3">
+                        <img src="{{src}}" style="width:100%"  data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    </div>
+                    
+                </div>
+            </div>
+            <br>
+          </div>
+
+        </div>
+        <h5 class="lead" style="color: rgb(7, 6, 6);">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+        </h5>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
